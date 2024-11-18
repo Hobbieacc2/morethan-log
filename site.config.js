@@ -1,10 +1,10 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: "Jornalismo",
-    image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "Escritor por hobbie",
-    bio: "Jornalismo de mangas e animes.",
+    name: "Manga Brasil",
+    image: "/avatar.svg", // Se você quiser criar seu próprio avatar de Notion, confira https://notion-avatar.vercel.app
+    role: "Portal de Jornalismo de Mangás",
+    bio: "Acompanhe as últimas notícias sobre mangás e animes!",
     email: "",
     linkedin: "",
     github: "",
@@ -14,16 +14,16 @@ const CONFIG = {
   ],
   // blog setting (required)
   blog: {
-    title: "Manga social",
-    description: "Bem vindo ao manga social!",
+    title: "Manga Brasil",
+    description: "Bem-vindo ao Manga Brasil, seu portal de notícias sobre mangás e animes!",
     scheme: "dark", // 'light' | 'dark' | 'system'
   },
 
-  // CONFIG configration (required)
-  link: "https://morethan-log.vercel.app",
-  since: 2022, // If leave this empty, current year will be used.
-  lang: "pt-BR", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
-  ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
+  // CONFIG configuration (required)
+  link: "https://mangabrasil.org", // Link para o site
+  since: 2022, // Ano de fundação do site
+  lang: "pt-BR", // Idioma do site
+  ogImageGenerateURL: "https://og-image-korean.vercel.app", // Link para gerar imagem OG, não termina com barra
 
   // notion configuration (required)
   notionConfig: {
@@ -61,11 +61,11 @@ const CONFIG = {
     enable: false,
     config: {
       host: "https://cusdis.com",
-      appid: "", // Embed Code -> data-app-id value
+      appid: "", // Código de incorporação -> valor de data-app-id
     },
   },
-  isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
-  revalidateTime: 21600 * 7, // revalidate time for [slug], index
+  isProd: process.env.VERCEL_ENV === "production", // Distinção entre ambientes de desenvolvimento e produção (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
+  revalidateTime: 21600 * 7, // Tempo de revalidação para [slug], índice
 }
 
 module.exports = { CONFIG }
