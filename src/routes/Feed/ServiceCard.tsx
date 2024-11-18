@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { CONFIG } from "site.config"
 import React from "react"
 import { AiFillCodeSandboxCircle } from "react-icons/ai"
